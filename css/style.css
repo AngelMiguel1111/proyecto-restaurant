@@ -1,0 +1,259 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #080808;
+    color: #f5f5f5;
+}
+
+/* ENCABEZADO */
+
+header {
+    background: #050505;
+    text-align: center;
+    padding: 35px 20px;
+    border-bottom: 2px solid #168cff;
+    box-shadow: 0 0 20px rgba(22, 140, 255, 0.25);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(22, 140, 255, 0.7);
+}
+
+header p {
+    color: #bbbbbb;
+}
+
+/* NAVEGACIÓN */
+
+nav {
+    background: #111;
+    padding: 16px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #168cff;
+    text-shadow: 0 0 8px #168cff;
+}
+
+/* CONTENIDO */
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+section {
+    margin-bottom: 45px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+h2::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #168cff;
+    margin: 10px auto;
+    box-shadow: 0 0 10px #168cff;
+}
+
+/* INICIO */
+
+.hero {
+    text-align: center;
+    padding: 70px 25px;
+    background: linear-gradient(135deg, #111, #181818);
+    border-radius: 18px;
+    border: 1px solid #292929;
+    box-shadow: 0 0 25px rgba(22, 140, 255, 0.12);
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto auto 25px;
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+/* BOTONES */
+
+.boton {
+    display: inline-block;
+    background: #168cff;
+    color: white;
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.boton:hover {
+    background: #0b75d1;
+    box-shadow: 0 0 15px rgba(22, 140, 255, 0.6);
+}
+
+/* TARJETAS */
+
+.tarjetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.tarjetas article {
+    background: #151515;
+    width: 300px;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #292929;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.tarjetas article:hover {
+    transform: translateY(-7px);
+    border-color: #168cff;
+    box-shadow: 0 0 20px rgba(22, 140, 255, 0.25);
+}
+
+.tarjetas h3 {
+    color: #168cff;
+}
+
+.tarjetas p {
+    color: #bbbbbb;
+    line-height: 1.6;
+}
+
+/* PLATOS */
+
+.platos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.plato {
+    background: #151515;
+    width: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #292929;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.plato:hover {
+    transform: translateY(-8px);
+    border-color: #168cff;
+    box-shadow: 0 0 20px rgba(22, 140, 255, 0.35);
+}
+
+.plato img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.plato p {
+    color: #bbbbbb;
+    line-height: 1.5;
+}
+
+.plato strong {
+    color: #168cff;
+    font-size: 21px;
+}
+
+/* INFORMACIÓN Y CONTACTO */
+
+.informacion,
+.contacto,
+.especial {
+    background: #151515;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: 4px solid #168cff;
+    line-height: 1.7;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.informacion p,
+.contacto p,
+.especial p {
+    color: #cccccc;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #050505;
+    color: #999;
+    text-align: center;
+    padding: 25px;
+    border-top: 1px solid #222;
+    margin-top: 30px;
+}
+
+/* CELULARES */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav li {
+        display: block;
+        margin: 12px 0;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .plato,
+    .tarjetas article {
+        width: 100%;
+    }
+}
